@@ -1,4 +1,4 @@
-import { GetStaticPathsContext } from "next";
+import { GetStaticPathsContext, GetStaticPropsContext } from "next";
 import { useRouter } from "next/router";
 import { productType } from "./index";
 export const getStaticPaths = async () => {
