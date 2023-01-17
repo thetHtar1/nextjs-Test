@@ -50,7 +50,7 @@ const ProductDescriptionPage = ({product}:{product:productType}) => {
             <p>category: {product.category}</p>
             <img src={product.thumbnail} alt="product image"/>
             {product.images.map((image)=>(
-                <img src={image} alt={`product Image ${product.images.indexOf(image)}`}/>
+                <img key ={product.id} src={image} alt={`product Image ${product.images.indexOf(image)}`}/>
             )
                 
             )}
