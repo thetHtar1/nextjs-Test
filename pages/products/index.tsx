@@ -19,7 +19,7 @@ type productPageProductType={
 }
 
 export const getStaticProps =async()=>{
-    const res= await fetch('https://dummyjson.com/products')
+    const res = await fetch('https://dummyjson.com/products')
     const data = await res.json();
     
     const products =data.products

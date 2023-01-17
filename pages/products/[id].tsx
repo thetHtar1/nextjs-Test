@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
 
 }
 export const getStaticProps = async(context:GetStaticPathsContext)=>{
-    const id= context.params?.id;
+    const id= context.params?.id
     const res = await fetch(`https://dummyjson.com/products/${id}`)
     const data = await res.json()
 
